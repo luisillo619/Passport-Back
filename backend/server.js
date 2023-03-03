@@ -63,9 +63,9 @@ app.use(session({
   cookie: {
     maxAge: 1000 * 60 * 60 * 24, // tiempo de vida de la cookie
     httpOnly: true,
-    secure: true,
-    sameSite: 'none',
-    domain: '.vercel.app' // Establecer el dominio de la cookie
+    secure: false,
+    sameSite: 'lax',
+    // domain: '.vercel.app' // Establecer el dominio de la cookie
   }
 }));
 
